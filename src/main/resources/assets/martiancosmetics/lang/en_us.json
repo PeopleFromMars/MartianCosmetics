@@ -1,8 +1,9 @@
 {
-  "itemGroup.martiancosmetics": "Example Mod Tab",
-  "block.martiancosmetics.example_block": "Example Block",
-  "item.martiancosmetics.example_item": "Example Item",
+  "itemGroup.martiancosmetics.cosmetics_tab": "Martian Cosmetics",
 
+  "item.martiancosmetics.rune_of_menace": "Rune of Menace",
+
+  "curios.identifier.martiancosmetic": "Martian Cosmetic Slot",
   "martiancosmetics.configuration.title": "Martian Cosmetics Configs",
   "martiancosmetics.configuration.section.martiancosmetics.common.toml": "Martian Cosmetics Configs",
   "martiancosmetics.configuration.section.martiancosmetics.common.toml.title": "Martian Cosmetics Configs",

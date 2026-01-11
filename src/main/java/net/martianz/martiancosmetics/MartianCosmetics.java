@@ -2,6 +2,7 @@ package net.martianz.martiancosmetics;
 
 import net.martianz.martiancosmetics.item.ModItems;
 
+import net.martianz.martiancosmetics.particle.ModParticles;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -28,9 +29,12 @@ public class MartianCosmetics {
     public MartianCosmetics(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
 
+        NeoForge.EVENT_BUS.register(this);
+
         BLOCKS.register(modEventBus);
         ModItems.register(modEventBus);
-        NeoForge.EVENT_BUS.register(this);
+        ModParticles.register(modEventBus);
+
 
         modEventBus.addListener(this::addCreative);
 

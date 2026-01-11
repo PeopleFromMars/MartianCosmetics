@@ -1,5 +1,7 @@
 package net.martianz.martiancosmetics;
 
+import net.martianz.martiancosmetics.particle.MenaceParticle;
+import net.martianz.martiancosmetics.particle.ModParticles;
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -7,6 +9,7 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.neoforge.client.event.RegisterParticleProvidersEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
@@ -20,5 +23,11 @@ public class MartianCosmeticsClient {
 
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
+
+    }
+
+    @SubscribeEvent
+    public static void registerParticleFactories(RegisterParticleProvidersEvent event){
+        event.registerSpriteSet(ModParticles.MENACE_PARTICLE.get(), MenaceParticle.Provider::new);
     }
 }
