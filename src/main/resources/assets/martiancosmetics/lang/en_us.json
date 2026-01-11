@@ -1,0 +1,13 @@
+{
+  "itemGroup.martiancosmetics": "Example Mod Tab",
+  "block.martiancosmetics.example_block": "Example Block",
+  "item.martiancosmetics.example_item": "Example Item",
+
+  "martiancosmetics.configuration.title": "Martian Cosmetics Configs",
+  "martiancosmetics.configuration.section.martiancosmetics.common.toml": "Martian Cosmetics Configs",
+  "martiancosmetics.configuration.section.martiancosmetics.common.toml.title": "Martian Cosmetics Configs",
+  "martiancosmetics.configuration.items": "Item List",
+  "martiancosmetics.configuration.logDirtBlock": "Log Dirt Block",
+  "martiancosmetics.configuration.magicNumberIntroduction": "Magic Number Text",
+  "martiancosmetics.configuration.magicNumber": "Magic Number"
+}
